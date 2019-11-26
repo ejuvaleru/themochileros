@@ -1,3 +1,28 @@
 .is-transparent{
     background: transparent!important;
 }
+.navbar{
+    height: 50px;
+}
+.navbar-brand{
+    width: 70px;
+    height: 70px;
+}
+.navbar-item{
+    color: #6c63ff;
+    font-size: 20px;
+    font-weight: 900;
+}
+.navbar-item:hover{
+    color: #4239fa;
+}
+.container{
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.burger{
+    position: absolute;
+    top: 0!important;
+    right: 0!important;
+}

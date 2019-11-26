@@ -1,14 +1,33 @@
-<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="" routerLink="/">
-            <!-- <img src="assets/images/logo.png"
-                alt="Logo Mochileros" width="28" height="28"> -->
-        </a>
+<div class="container">
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="" routerLink="/">
+                <img src="assets/images/logo.png" alt="Logo Mochileros">
+            </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-</nav>
+
+            <a (click)="toggleNavbar()" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample" #navBurger>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu" #navMenu>
+            <div class="navbar-end">
+                <a class="navbar-item is-primary" routerLink="/" (click)="toggleNavbarNo()">
+                    inicio
+                </a>
+                <a class="navbar-item is-primary" routerLink="/" (click)="toggleNavbarNo()">
+                    servicios
+                </a>
+                <a class="navbar-item is-primary" routerLink="/" (click)="toggleNavbarNo()">
+                    nosotros
+                </a>
+                <a class="navbar-item is-primary" routerLink="/" (click)="toggleNavbarNo()">
+                    socios
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
